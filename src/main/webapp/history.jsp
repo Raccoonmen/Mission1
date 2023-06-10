@@ -19,7 +19,7 @@ delete_history.jsp로 해당 히스토리의 id값을 보내서 삭제합니다.
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>와이파이 정보 구하기</title>
+	<title>위치 히스토리 목록</title>
 	<style>
 	#customers {
 	  font-family: Arial, Helvetica, sans-serif;
@@ -59,7 +59,7 @@ delete_history.jsp로 해당 히스토리의 id값을 보내서 삭제합니다.
 
 
 
-	<h1> 와이파이 정보 구하기 </h1>
+	<h1> 위치 히스토리 목록 </h1>
 	<a href="index.jsp">홈</a>
     <a href="history.jsp">위치 히스토리 목록</a>
 	<a href="openAPI.jsp">Open API 와이파이 정보 가져오기</a>

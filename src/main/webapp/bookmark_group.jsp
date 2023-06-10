@@ -23,7 +23,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>와이파이 정보 구하기</title>
+	<title>북마크 그룹</title>
 	<style>
 	#customers {
 	  font-family: Arial, Helvetica, sans-serif;
@@ -60,7 +60,7 @@
 
 
 
-	<h1> 와이파이 정보 구하기 </h1>
+	<h1> 북마크 그룹 </h1>
 	<a href="index.jsp">홈</a>
     <a href="history.jsp">위치 히스토리 목록</a>
 	<a href="openAPI.jsp">Open API 와이파이 정보 가져오기</a>

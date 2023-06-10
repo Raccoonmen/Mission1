@@ -15,7 +15,7 @@ select > option에 넣는다.
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>와이파이 정보 구하기</title>
 	<style>
 	#customers {
 	  font-family: Arial, Helvetica, sans-serif;
@@ -81,7 +81,7 @@ select > option에 넣는다.
         List<Member> bookmark_group = book.bookmark_group_name(); 
     %>
 
-    <h1> 회원 상세 목록 </h1>
+    <h1> 와이파이 정보 구하기 </h1>
     <a href="index.jsp">홈</a>
     <a href="history.jsp">위치 히스토리 목록</a>
     <a href="openAPI.jsp">Open API 와이파이 정보 가져오기</a>

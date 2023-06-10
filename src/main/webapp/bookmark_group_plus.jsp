@@ -18,7 +18,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>와이파이 정보 구하기</title>
+	<title>북마크 그룹 추가</title>
 	<style>
 	#customers {
 	  font-family: Arial, Helvetica, sans-serif;
