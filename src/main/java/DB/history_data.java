@@ -9,6 +9,8 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
+//히스토리 데이터를 가져오고 저장하는 페이지
+
 public class history_data {
 	
 	
