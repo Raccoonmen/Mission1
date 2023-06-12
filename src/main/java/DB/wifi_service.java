@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+//근처 와이파이 20개 가져오기, distance값 업데이트하는 과정 
 
 public class wifi_service {
     private static final double EARTH_RADIUS = 6371.0;
@@ -12,25 +13,7 @@ public class wifi_service {
     public List<Member> near_wifi(float lat, float lnt) {
             
     
-        List<Member> memberList = new ArrayList<>();
-        
-        //MemberService 
-        
-        
-        //5개
-        //1. ip(도메인주소)
-        //2. port
-        //3. 계정
-        //4. password
-        //5. 인스턴스
-
-
-        //1. 드라이브 로드
-        //2. 커넥션 객체생성
-        //3. 스테이트먼트 객체 생성
-        //4. 쿼리실행
-        //5. 결과수행
-        //6. 객체연결 해제
+        List<Member> memberList = new ArrayList<>();        
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -88,7 +71,7 @@ public class wifi_service {
                 memberList.add(member);
             }
            
-
+            //멤버리스트를 오름차순으로 정리(가까운순으로 리스트를 정리) 
             Collections.sort(memberList, Comparator.comparing(Member::getDistance));
         } catch (SQLException e) {
             e.printStackTrace();
@@ -148,26 +131,10 @@ public class wifi_service {
         }
     }
     
-       
+    //와이파이 상세보기를 위한 코드
     public List<Member> detail(String wifiName) {
     	
     	List<Member> memberList = new ArrayList<>();
-    	
-
-        //5개
-        //1. ip(도메인주소)
-        //2. port
-        //3. 계정
-        //4. password
-        //5. 인스턴스
-
-
-        //1. 드라이브 로드
-        //2. 커넥션 객체생성
-        //3. 스테이트먼트 객체 생성
-        //4. 쿼리실행
-        //5. 결과수행
-        //6. 객체연결 해제
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -182,7 +149,7 @@ public class wifi_service {
 
 
 
-        //2~3. 커넥션, 스테티으먼트 객체 생성
+        //2~3. 커넥션, 스테먼트 객체 생성
         try {
         	connection = DriverManager.getConnection("jdbc:sqlite:C:\\dev\\sqlite-tools-win32-x86-3420000\\sqlite-tools-win32-x86-3420000\\WIFI.sqlite3\\");
 
