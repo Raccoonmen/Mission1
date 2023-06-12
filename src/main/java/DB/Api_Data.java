@@ -10,7 +10,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import javax.servlet.http.HttpServletRequest;
 
-
+//APi에서 APi데이터를 가져와서 DB에 저장하는 코드
 
 public class Api_Data {
     public static void api_data(HttpServletRequest request) {
@@ -99,6 +99,7 @@ public class Api_Data {
                 }
 
             }
+            //같은 man_num을 가진 데이터를 삭제하는 부분 > 중복데이터가 DB안에 많아서 근처WIFI검색시 같은 와이파이가 20개 잡히는 경우 
             String deleteDuplicateQuery = "DELETE FROM WIFI_API_DATA WHERE rowid NOT IN (SELECT MIN(rowid) FROM WIFI_API_DATA GROUP BY man_num)";
             PreparedStatement deleteDuplicateStatement = connection.prepareStatement(deleteDuplicateQuery);
             deleteDuplicateStatement.executeUpdate();
